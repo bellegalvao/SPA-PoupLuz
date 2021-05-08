@@ -92,7 +92,7 @@
 
   /**
    * Back to top button
-   */
+   */ /**
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
@@ -104,7 +104,22 @@
     }
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
-  }
+  }*/
+
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+          $('.back-to-top').fadeIn();
+      } else {
+          $('.back-to-top').fadeOut();
+      }
+  });
+
+    $('.back-to-top').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });  
+});
 
   /**
    * Mobile nav toggle
