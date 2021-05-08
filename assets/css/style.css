@@ -30,20 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-.back-to-top {
-  border-radius: 10px;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 15px;
-  right: 85px;
-  width: 40px;
-  height: 40px;
-  background-color: #00458e;
-  text-decoration: none;
-  
-}
+
 
 .back-to-top i {
   font-size: 28px;
@@ -58,19 +45,45 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   transition: all 0.4s;
 }
-.back-to-top:hover {
-  background: #a2c8f0;
-  color: rgb(51, 50, 50);
+
+#button {
+  display: inline-block;
+  background-color: #00458e;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 15px;
+  right: 85px;
+  width: 40px;
+  height: 40px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
 }
-.back-to-top:active {
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #a2c8f0;
+}
+#button:active {
   background-color: #555;
 }
-.back-to-top:show {
+#button.show {
   opacity: 1;
   visibility: visible;
 }
-
-
 
 
 /*--------------------------------------------------------------

@@ -93,22 +93,20 @@
   /**
    * Back to top button
    */
-  
 
+var btn = $('#button');
 
- $(window).scroll(function() {
-  if ($(this).scrollTop() > 100) {
-    $('.back-to-top').fadeIn('slow');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
   } else {
-    $('.back-to-top').fadeOut('slow');
+    btn.removeClass('show');
   }
 });
 
-$('.back-to-top').click(function() {
-  $('html, body').animate({
-    scrollTop: 0
-  }, 1500, 'easeInOutExpo');
-  return false;
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
 });
 
 
