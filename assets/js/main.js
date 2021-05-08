@@ -92,35 +92,11 @@
 
   /**
    * Back to top button
-   */ /**
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
+   */
+  
 
-  $(document).ready(function(){
-    $(window).scroll(function(){
-      if ($(this).scrollTop() > 100) {
-          $('.back-to-top').fadeIn();
-      } else {
-          $('.back-to-top').fadeOut();
-      }
-  });
 
-    $('.back-to-top').click(function(){
-        $('html, body').animate({scrollTop : 0},800);
-        return false;
-    });  
-});*/
-$(window).scroll(function() {
+ $(window).scroll(function() {
   if ($(this).scrollTop() > 100) {
     $('.back-to-top').fadeIn('slow');
   } else {
@@ -134,6 +110,7 @@ $('.back-to-top').click(function() {
   }, 1500, 'easeInOutExpo');
   return false;
 });
+
 
 
   /**

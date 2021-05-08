@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   background-color: #00458e;
   text-decoration: none;
-  z-index: 99999;
+  
 }
 
 .back-to-top i {
@@ -58,11 +58,18 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   transition: all 0.4s;
 }
-
 .back-to-top:hover {
   background: #a2c8f0;
   color: rgb(51, 50, 50);
 }
+.back-to-top:active {
+  background-color: #555;
+}
+.back-to-top:show {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 
 
@@ -1593,6 +1600,14 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+#footer .credits a:hover {
+  color:#00458e;
+}
+
+.clients .container .owl-carousel{
+  margin-left: 100px;
+
+}
 .clients .owl-item {
   display: flex;
   justify-content: center;
@@ -1633,7 +1648,13 @@ section {
 
 .clients .owl-dot.active {
   background-color:#84c225 !important;
- 
+}
+
+@media (max-width: 768px) {
+  .clients .container .owl-carousel{
+    margin-left: 0px;
+  
+  }
 }
 
 
