@@ -24,7 +24,11 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+p{
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -111,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: #ffffffbb;
+  background: #ffffff;
 }
 #header.header-scrolled a {
   color: #0c151f;
@@ -166,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 15px 7px 15px;
   margin-left: 5px;
   font-size: 17px;
-  color: #fff;
+  color: #242424;
   white-space: nowrap;
   transition: 0.3s;
   border-radius: 50px;
@@ -357,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, #93d2db 0%, #576afd 100%);
+  background: linear-gradient(0deg, #dcf0f3 0%, #93d2db 100%);
   padding: 0;
 }
 
@@ -373,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: #fff;
+  color: #272727;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
@@ -384,7 +388,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: #fff;
+  color: #424242;
+  font-size: 20px;
 }
 
 #hero .carousel-control-prev, #hero .carousel-control-next {
@@ -402,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 24px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
