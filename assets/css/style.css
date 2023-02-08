@@ -1561,8 +1561,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #202436;
-  color: #fff;
+  background: #f4f7fd;
+  color: #1f1e1e;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1572,7 +1572,7 @@ section {
   max-height: 60px;
   font-size: 36px;
   font-weight: 700;
-  color: #fff;
+  color: #303030;
   position: relative;
   font-family: "Poppins", sans-serif;
   padding: 0;
